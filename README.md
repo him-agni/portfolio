@@ -1,16 +1,68 @@
-# React + Vite
+# Himani Agrawal - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Preview](./public/github-stats.png)
 
-Currently, two official plugins are available:
+A modern, responsive, and beautifully crafted developer portfolio built to showcase my full-stack and frontend engineering projects. The design features a premium "glassmorphic" aesthetic with a deep dark-mode color palette and dynamic micro-animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[**View Live Site**](https://him-agni.github.io/portfolio/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Glassmorphism UI**: Stunning translucent backgrounds with blurred overlays (`backdrop-filter`) creates a rich depth-of-field effect.
+- **Dynamic Projects Showcase**: High-quality UI mockups with interactive 3D-hover states linking to live demos and source code.
+- **Responsive Design**: Flawlessly adapts to all screen sizes from mobile to desktop.
+- **Seamless Navigation**: Sticky navbar with smooth scroll integration to page sections.
+- **Optimized for Speed**: Built on Vite for lightning-fast HMR and highly optimized production builds.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Framework:** React 18
+- **Build Tool:** Vite
+- **Styling:** Vanilla CSS (Custom Properties, Flexbox, CSS Grid)
+- **Icons:** `lucide-react` & `react-icons`
+- **Deployment:** GitHub Pages
+
+## 🚀 Local Development
+
+To run this project locally, follow these steps:
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/him-agni/portfolio.git
+cd portfolio
+```
+
+**2. Install dependencies**
+```bash
+npm install
+```
+
+**3. Start the development server**
+```bash
+npm run dev
+```
+
+**4. Open your browser**
+Navigate to `http://localhost:5173/`
+
+## 📦 Deployment
+
+This project configured to deploy automatically to GitHub pages. To deploy a new update:
+
+1. Commit your changes to the `main` branch.
+2. Run the deployment script:
+   ```bash
+   npm run deploy
+   ```
+This will automatically build the `dist` directory and push it to the `gh-pages` branch.
+
+## 🤝 Connect with Me
+
+- **LinkedIn:** [linkedin.com/in/himani--agrawal](https://www.linkedin.com/in/himani--agrawal/)
+- **GitHub:** [github.com/him-agni](https://github.com/him-agni)
+
+---
+
+*Designed & developed by [Himani Agrawal](https://github.com/him-agni).*
