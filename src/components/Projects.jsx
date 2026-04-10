@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: 'GitHub Stats Tracker',
       description: 'A dynamic developer dashboard that visualizes GitHub profile statistics. Built with modern UI patterns and seamless API integrations.',
-      image: '/github-stats.png',
+      image: `${import.meta.env.BASE_URL}github-stats.png`,
       tags: ['React', 'JavaScript', 'CSS', 'GitHub API'],
       liveLink: 'https://github-stats-tracker-three.vercel.app/',
       repoLink: 'https://github.com/him-agni/github-stats-tracker'
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: 'Personal Finance Tracker',
       description: 'A full-stack application to track expenses and manage personal finances. Features a sleek dark-mode glassmorphic UI and intuitive data visualization.',
-      image: '/finance-tracker.png',
+      image: `${import.meta.env.BASE_URL}finance-tracker.png`,
       tags: ['MERN', 'React', 'MongoDB', 'Express', 'Vite'],
       liveLink: 'https://personal-finance-tracker-tkfm.vercel.app/login',
       repoLink: 'https://github.com/him-agni/personal-finance-tracker'

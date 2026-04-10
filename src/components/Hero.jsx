@@ -26,7 +26,7 @@ const Hero = () => {
             <a href="#projects" className="btn btn-primary">
               View My Work <ChevronRight size={20} />
             </a>
-            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary glass">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" className="btn btn-secondary glass">
               View Resume <FileText size={20} />
             </a>
           </div>
