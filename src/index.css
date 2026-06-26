@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-color: #0b0f19;
-  --bg-gradient: linear-gradient(135deg, #0b0f19 0%, #1a1b35 100%);
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --accent-primary: #10b981; /* neon green */
-  --accent-secondary: #8b5cf6; /* purple */
-  --accent-tertiary: #3b82f6; /* blue */
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  --bg-color: #05090a;
+  --bg-gradient: radial-gradient(circle at 78% 16%, rgba(169, 255, 0, 0.16), transparent 26%), linear-gradient(135deg, #05090a 0%, #111819 56%, #060909 100%);
+  --text-primary: #f7fff1;
+  --text-secondary: #a9b7ad;
+  --accent-primary: #b6ff00;
+  --accent-secondary: #e9ffd0;
+  --accent-tertiary: #78a500;
+  --panel-bg: rgba(18, 25, 25, 0.82);
+  --glass-bg: rgba(255, 255, 255, 0.055);
+  --glass-border: rgba(182, 255, 0, 0.2);
+  --glass-shadow: 0 18px 60px rgba(0, 0, 0, 0.38);
 }
 
 * {
@@ -55,8 +56,8 @@ button {
 }
 
 .glass-panel {
-  border-radius: 16px;
-  background: var(--glass-bg);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(24, 32, 32, 0.94), rgba(10, 15, 15, 0.96));
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
@@ -72,9 +73,9 @@ button {
 /* Typography utilities */
 .heading-xl {
   font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .heading-lg {
@@ -89,7 +90,7 @@ button {
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), var(--accent-tertiary));
+  background: linear-gradient(90deg, var(--accent-primary), #ffffff, var(--accent-primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -118,6 +119,11 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+::selection {
+  background: var(--accent-primary);
+  color: #05090a;
 }
 
 html {

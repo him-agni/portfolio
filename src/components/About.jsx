@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <div className="container">
-        <div className="about-grid.glass-panel glass-panel">
+        <div className="about-grid glass-panel">
           <div className="about-content">
             <h2 className="heading-lg">About <span className="text-gradient">Me</span></h2>
             <p className="about-text">

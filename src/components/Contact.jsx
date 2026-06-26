@@ -19,7 +19,7 @@ const Contact = () => {
                 <FaLinkedin size={28} />
               </div>
               <h3>LinkedIn</h3>
-              <p>Let's connect</p>
+              <p>Connect and be part of my journey.</p>
             </a>
             
             <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="contact-card glass group">
@@ -27,15 +27,15 @@ const Contact = () => {
                 <FaGithub size={28} />
               </div>
               <h3>GitHub</h3>
-              <p>View my work</p>
+              <p>Explore my code and growth.</p>
             </a>
 
-            <a href="https://www.instagram.com/neophyte.js" target="_blank" rel="noreferrer" className="contact-card glass group">
+            <a href="https://www.instagram.com/webdevlearns" target="_blank" rel="noreferrer" className="contact-card glass group">
               <div className="icon-wrapper">
                 <FaInstagram size={28} />
               </div>
               <h3>Instagram</h3>
-              <p>@neophyte.js</p>
+              <p>Educational web dev content.</p>
             </a>
             
             <div className="contact-card glass">
@@ -43,7 +43,7 @@ const Contact = () => {
                 <MapPin size={28} />
               </div>
               <h3>Location</h3>
-              <p>Austin, TX</p>
+              <p>Open to roles in Austin and remote.</p>
             </div>
           </div>
         </div>

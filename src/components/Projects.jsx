@@ -6,6 +6,27 @@ import './Projects.css';
 const Projects = () => {
   const projectsData = [
     {
+      title: 'SaaS Integration Hub',
+      description: 'A multi-API integration hub designed to connect SaaS workflows, centralize external services, and make operational data easier to manage.',
+      image: 'https://opengraph.githubassets.com/portfolio-saas-integration/him-agni/MutliAPI_integration_hub',
+      tags: ['React', 'APIs', 'SaaS', 'Integration'],
+      repoLink: 'https://github.com/him-agni/MutliAPI_integration_hub'
+    },
+    {
+      title: 'Release Intelligence Dashboard',
+      description: 'A dashboard for tracking release activity, surfacing engineering signals, and turning changelog noise into useful product intelligence.',
+      image: `${import.meta.env.BASE_URL}release-intelligence-dashboard.svg`,
+      tags: ['React', 'Dashboard', 'Analytics', 'Automation'],
+      repoLink: 'https://github.com/him-agni/release-intelligence-dashboard'
+    },
+    {
+      title: 'Lead Form Automation Hub',
+      description: 'An automation-focused lead capture hub built to streamline form submissions, routing, and follow-up workflows for business teams.',
+      image: 'https://opengraph.githubassets.com/portfolio-lead-automation/him-agni/lead-form-automation-hub',
+      tags: ['React', 'Automation', 'Forms', 'Workflow'],
+      repoLink: 'https://github.com/him-agni/lead-form-automation-hub'
+    },
+    {
       title: 'GitHub Stats Tracker',
       description: 'A dynamic developer dashboard that visualizes GitHub profile statistics. Built with modern UI patterns and seamless API integrations.',
       image: `${import.meta.env.BASE_URL}github-stats.png`,
@@ -37,9 +58,15 @@ const Projects = () => {
               <div className="project-image-wrapper">
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-overlay">
-                  <a href={project.liveLink} target="_blank" rel="noreferrer" className="overlay-btn">
-                    <ExternalLink size={20} /> Live Demo
-                  </a>
+                  {project.liveLink ? (
+                    <a href={project.liveLink} target="_blank" rel="noreferrer" className="overlay-btn">
+                      <ExternalLink size={20} /> Live Demo
+                    </a>
+                  ) : (
+                    <span className="overlay-btn overlay-btn-disabled">
+                      <ExternalLink size={20} /> Deploy soon
+                    </span>
+                  )}
                   <a href={project.repoLink} target="_blank" rel="noreferrer" className="overlay-btn">
                     <FaGithub size={20} /> Source Code
                   </a>
