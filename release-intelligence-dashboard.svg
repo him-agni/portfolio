@@ -1,0 +1,81 @@
+<svg width="1484" height="810" viewBox="0 0 1484 810" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1484" height="810" fill="#231509"/>
+  <circle cx="120" cy="70" r="380" fill="#4a2b12" opacity="0.38"/>
+  <rect x="70" y="102" width="1278" height="153" rx="7" fill="#10130f"/>
+  <rect x="1206" y="121" width="120" height="114" rx="7" fill="#e4f6d0"/>
+  <text x="69" y="40" fill="#d49f35" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="800">RELEASE INTELLIGENCE</text>
+  <text x="69" y="77" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">Deployment Health</text>
+  <rect x="783" y="35" width="205" height="38" rx="7" fill="#050604" stroke="#8a621c"/>
+  <rect x="786" y="39" width="66" height="30" rx="6" fill="#c6902d"/>
+  <text x="797" y="58" fill="#050604" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="900">Healthy</text>
+  <text x="864" y="59" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800">Watch</text>
+  <text x="925" y="59" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="800">Incident</text>
+  <rect x="1000" y="35" width="224" height="38" rx="7" fill="#060704" stroke="#332414"/>
+  <text x="1040" y="60" fill="#d49f35" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Simulate Deployment</text>
+  <rect x="1236" y="35" width="38" height="38" rx="7" fill="#060704" stroke="#332414"/>
+  <rect x="1286" y="35" width="63" height="38" rx="7" fill="#060704" stroke="#332414"/>
+  <text x="1304" y="60" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900">Reset</text>
+  <text x="92" y="146" fill="#cfa13a" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">main  ->  e8f9c173c1e634cd031dbc23b9088aee65740969     14s</text>
+  <text x="92" y="183" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">him-agni/release-intelligence-dashboard</text>
+  <text x="92" y="214" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="16">Release is green. No major negative signals were detected after deployment.</text>
+  <text x="1240" y="172" fill="#0b6f25" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="900">Healthy</text>
+  <text x="1243" y="212" fill="#0b7f28" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">100</text>
+  <rect x="70" y="275" width="900" height="52" rx="7" fill="#050604"/>
+  <text x="88" y="306" fill="#d49f35" font-family="Inter, Arial, sans-serif" font-size="12">Recommendation</text>
+  <text x="810" y="310" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">Ship Confidently</text>
+  <rect x="990" y="275" width="358" height="428" rx="7" fill="#0b0d09"/>
+  <text x="1008" y="311" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="900">Deployment Timeline</text>
+  <circle cx="1318" cy="306" r="13" fill="#362717"/>
+  <text x="1314" y="311" fill="#d49f35" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="900">5</text>
+  <rect x="1008" y="333" width="322" height="64" rx="7" fill="#1d1d19" stroke="#c6902d"/>
+  <rect x="1008" y="405" width="322" height="64" rx="7" fill="#1d1d19" stroke="#332414"/>
+  <rect x="1008" y="477" width="322" height="64" rx="7" fill="#1d1d19" stroke="#332414"/>
+  <rect x="1008" y="550" width="322" height="64" rx="7" fill="#1d1d19" stroke="#332414"/>
+  <rect x="1008" y="621" width="322" height="64" rx="7" fill="#1d1d19" stroke="#332414"/>
+  <text x="1040" y="363" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Release Demo</text>
+  <text x="1040" y="435" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Release Demo</text>
+  <text x="1040" y="508" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Deploy Production</text>
+  <text x="1040" y="581" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Deploy Production</text>
+  <text x="1040" y="654" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Deploy Production</text>
+  <g fill="#10130f" stroke="#252115">
+    <rect x="70" y="343" width="216" height="65" rx="7"/>
+    <rect x="298" y="343" width="216" height="65" rx="7"/>
+    <rect x="526" y="343" width="216" height="65" rx="7"/>
+    <rect x="754" y="343" width="216" height="65" rx="7"/>
+  </g>
+  <text x="82" y="369" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Triggered by</text>
+  <text x="82" y="393" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">him-agni</text>
+  <text x="310" y="369" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Workflow</text>
+  <text x="310" y="393" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">completed</text>
+  <text x="538" y="369" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Deployed at</text>
+  <text x="538" y="393" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Jun 26, 3:12 PM</text>
+  <text x="766" y="369" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Commit</text>
+  <text x="766" y="393" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">e8f9c173c1e...</text>
+  <rect x="70" y="424" width="442" height="379" rx="7" fill="#0a0c08"/>
+  <rect x="528" y="424" width="442" height="379" rx="7" fill="#0a0c08"/>
+  <text x="112" y="462" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">Sentry</text>
+  <text x="572" y="462" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="900">PostHog</text>
+  <g fill="#1e1e1a" stroke="#332d1e">
+    <rect x="88" y="480" width="406" height="68" rx="7"/>
+    <rect x="88" y="559" width="406" height="68" rx="7"/>
+    <rect x="88" y="638" width="406" height="68" rx="7"/>
+    <rect x="546" y="480" width="406" height="68" rx="7"/>
+    <rect x="546" y="559" width="406" height="68" rx="7"/>
+    <rect x="546" y="638" width="406" height="68" rx="7"/>
+    <rect x="546" y="717" width="406" height="68" rx="7"/>
+  </g>
+  <text x="146" y="505" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">New issues</text>
+  <text x="146" y="531" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0</text>
+  <text x="146" y="584" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Error rate</text>
+  <text x="146" y="610" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0/min</text>
+  <text x="146" y="663" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Release health</text>
+  <text x="146" y="689" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">healthy</text>
+  <text x="604" y="505" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Sessions</text>
+  <text x="604" y="531" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0</text>
+  <text x="604" y="584" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Active users</text>
+  <text x="604" y="610" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0</text>
+  <text x="604" y="663" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Exceptions</text>
+  <text x="604" y="689" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0</text>
+  <text x="604" y="742" fill="#fff7bf" font-family="Inter, Arial, sans-serif" font-size="12">Activity delta</text>
+  <text x="604" y="768" fill="#fffbe9" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">0%</text>
+</svg>
