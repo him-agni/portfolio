@@ -10,6 +10,7 @@ const Projects = () => {
       description: 'A multi-API integration hub designed to connect SaaS workflows, centralize external services, and make operational data easier to manage.',
       image: 'https://opengraph.githubassets.com/portfolio-saas-integration/him-agni/MutliAPI_integration_hub',
       tags: ['React', 'APIs', 'SaaS', 'Integration'],
+      liveLink: 'https://multi-api-integration-hub-frontend.vercel.app/dashboard',
       repoLink: 'https://github.com/him-agni/MutliAPI_integration_hub'
     },
     {
@@ -17,6 +18,7 @@ const Projects = () => {
       description: 'A dashboard for tracking release activity, surfacing engineering signals, and turning changelog noise into useful product intelligence.',
       image: `${import.meta.env.BASE_URL}release-intelligence-dashboard.svg`,
       tags: ['React', 'Dashboard', 'Analytics', 'Automation'],
+      liveLink: 'https://release-intelligence-dashboard.vercel.app/',
       repoLink: 'https://github.com/him-agni/release-intelligence-dashboard'
     },
     {
