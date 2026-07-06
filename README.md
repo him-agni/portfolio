@@ -1,6 +1,7 @@
 # Himani Agrawal - Developer Portfolio
 
-![Portfolio Preview]<img width="1250" height="736" alt="image" src="https://github.com/user-attachments/assets/edf45f07-f6ba-4e39-b194-0ab33c0813a5" />
+<img width="1558" height="911" alt="image" src="https://github.com/user-attachments/assets/789c3b75-9a46-4acd-b66b-38db771bee5d" />
+
 
 
 A modern, responsive, and beautifully crafted developer portfolio built to showcase my full-stack and frontend engineering projects. The design features a premium "glassmorphic" aesthetic with a deep dark-mode color palette and dynamic micro-animations.
