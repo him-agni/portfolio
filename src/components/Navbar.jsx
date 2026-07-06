@@ -16,18 +16,24 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  const scrollToSection = (id) => (e) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-content">
-        <a href="#home" className="logo">
+        <a href="#home" className="logo" onClick={scrollToSection('home')}>
           <span className="text-gradient">&lt;Himani /&gt;</span>
         </a>
 
         {/* Desktop Menu */}
         <div className="desktop-menu">
-          <a href="#about" className="nav-link">About</a>
-          <a href="#projects" className="nav-link">Projects</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a href="#about" className="nav-link" onClick={scrollToSection('about')}>About</a>
+          <a href="#projects" className="nav-link" onClick={scrollToSection('projects')}>Projects</a>
+          <a href="#contact" className="nav-link" onClick={scrollToSection('contact')}>Contact</a>
           <div className="social-links-nav">
             <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="social-icon">
               <FaGithub size={20} />
@@ -47,9 +53,9 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="mobile-menu glass">
-          <a href="#about" onClick={toggleMenu}>About</a>
-          <a href="#projects" onClick={toggleMenu}>Projects</a>
-          <a href="#contact" onClick={toggleMenu}>Contact</a>
+          <a href="#about" onClick={scrollToSection('about')}>About</a>
+          <a href="#projects" onClick={scrollToSection('projects')}>Projects</a>
+          <a href="#contact" onClick={scrollToSection('contact')}>Contact</a>
         </div>
       )}
     </nav>
