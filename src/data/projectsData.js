@@ -1,12 +1,6 @@
 import saasIntegrationHubImage from '../assets/saas integration hub.png';
 import releaseIntelligenceImage from '../assets/release intelligence.png';
 
-const placeholderArtifacts = [
-  { title: 'Mock RFP Response', description: 'Technical Q&A on scoring, reliability, and integration.' },
-  { title: 'Solution Brief', description: 'One-page problem → solution → outcome summary.' },
-  { title: 'MEDDIC Breakdown', description: 'Deal-framing exercise: buyer, pain, metrics, process.' }
-];
-
 const artifactsFor = (fileBaseName) => [
   {
     title: 'Mock RFP Response',
@@ -93,20 +87,33 @@ export const projectsData = [
   },
   {
     slug: 'lead-form-automation-hub',
-    title: 'Lead Form Automation Hub',
+    title: 'Lead & Form Automation Hub',
     category: 'Project',
     verified: true,
     description: 'An automation-focused lead capture hub built to streamline form submissions, routing, and follow-up workflows for business teams.',
-    longDescription: 'Content coming soon — full case study write-up in progress.',
+    longDescription: 'A webhook-driven lead pipeline that takes a form submission and reliably fans it out to a CRM, team chat, and spreadsheet log — with per-destination retry so one vendor outage never loses a lead.',
     image: 'https://opengraph.githubassets.com/portfolio-lead-automation/him-agni/lead-form-automation-hub',
-    tags: ['React', 'Automation', 'Forms', 'Workflow'],
+    tags: ['React', 'Node.js / Express', 'MongoDB', 'Tally', 'Airtable', 'Discord', 'Google Sheets'],
     repoLink: 'https://github.com/him-agni/lead-form-automation-hub',
-    problem: 'Content coming soon.',
-    solutionIntro: 'Content coming soon.',
-    solutionSteps: [],
-    capabilities: [],
-    businessOutcome: 'Content coming soon.',
-    artifacts: placeholderArtifacts
+    problem: 'Marketing and RevOps teams capture leads through forms but rely on brittle chains — often Zapier or manual copy-paste — to move each lead into their CRM, team chat, and spreadsheet log. When one link in the chain silently fails, hot leads get lost and no one notices until a customer complains.',
+    solutionIntro: 'A signed-webhook lead pipeline that verifies Tally submissions, then fans them out in parallel to Airtable, Discord, and Google Sheets — with per-destination retry so one vendor outage never takes the whole flow down, and a live dashboard so every submission is traceable.',
+    solutionSteps: [
+      'Tally form submission',
+      'HMAC-verified webhook',
+      'parallel fanout: Airtable · Discord · Google Sheets',
+      'per-destination retry with exponential backoff',
+      'live React dashboard'
+    ],
+    capabilities: [
+      'Constant-time HMAC-SHA256 signature verification on every Tally webhook',
+      "Per-destination retry with exponential backoff, so one channel outage doesn't block the others",
+      'Deduplication by Tally submission ID, so webhook retries don\'t create duplicate CRM records',
+      'Built-in "Fire Test Submission" flow for demos and testing without a live form or tunnel',
+      'Live dashboard with per-destination status and searchable submission history',
+      'Full setup and API docs, plus an importable Postman collection for self-serve integration'
+    ],
+    businessOutcome: 'No lost leads, faster team response to inbound because Discord alerts and CRM records land in real time, and one operational view instead of chasing "did this lead actually come through" across three tools.',
+    artifacts: artifactsFor('Lead_Form_Automation_Hub')
   },
   {
     title: 'GitHub Stats Tracker',
