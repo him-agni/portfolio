@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileText, Sparkles } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 import profilePhoto from '../assets/himani-profile.jpeg';
 import './Hero.css';
 
@@ -9,10 +9,6 @@ const Hero = () => {
       <div className="grid-overlay"></div>
       <div className="container hero-container">
         <div className="hero-content">
-          <span className="badge">
-            <Sparkles size={16} />
-            Open to junior developer roles
-          </span>
           <h1 className="heading-xl hero-title">
             Hi, I'm <span>Himani Agrawal</span>
           </h1>
