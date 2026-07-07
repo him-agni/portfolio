@@ -1,5 +1,6 @@
 import saasIntegrationHubImage from '../assets/saas integration hub.png';
 import releaseIntelligenceImage from '../assets/release intelligence.png';
+import leadFormAutomationImage from '../assets/lead & form automation.png';
 
 const artifactsFor = (fileBaseName) => [
   {
@@ -92,8 +93,9 @@ export const projectsData = [
     verified: true,
     description: 'An automation-focused lead capture hub built to streamline form submissions, routing, and follow-up workflows for business teams.',
     longDescription: 'A webhook-driven lead pipeline that takes a form submission and reliably fans it out to a CRM, team chat, and spreadsheet log — with per-destination retry so one vendor outage never loses a lead.',
-    image: 'https://opengraph.githubassets.com/portfolio-lead-automation/him-agni/lead-form-automation-hub',
+    image: leadFormAutomationImage,
     tags: ['React', 'Node.js / Express', 'MongoDB', 'Tally', 'Airtable', 'Discord', 'Google Sheets'],
+    liveLink: 'https://client-lime-alpha.vercel.app',
     repoLink: 'https://github.com/him-agni/lead-form-automation-hub',
     problem: 'Marketing and RevOps teams capture leads through forms but rely on brittle chains — often Zapier or manual copy-paste — to move each lead into their CRM, team chat, and spreadsheet log. When one link in the chain silently fails, hot leads get lost and no one notices until a customer complains.',
     solutionIntro: 'A signed-webhook lead pipeline that verifies Tally submissions, then fans them out in parallel to Airtable, Discord, and Google Sheets — with per-destination retry so one vendor outage never takes the whole flow down, and a live dashboard so every submission is traceable.',
