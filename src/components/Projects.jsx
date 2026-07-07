@@ -21,9 +21,16 @@ const Projects = () => {
                 <img src={project.image} alt={project.title} className="project-image" />
                 <div className="project-overlay">
                   {project.slug ? (
-                    <Link to={`/projects/${project.slug}`} className="overlay-btn">
-                      <ExternalLink size={20} /> View Case Study
-                    </Link>
+                    <>
+                      <Link to={`/projects/${project.slug}`} className="overlay-btn">
+                        <ExternalLink size={20} /> View Case Study
+                      </Link>
+                      {project.liveLink && (
+                        <a href={project.liveLink} target="_blank" rel="noreferrer" className="overlay-btn">
+                          <ExternalLink size={20} /> Live Demo
+                        </a>
+                      )}
+                    </>
                   ) : (
                     <>
                       {project.liveLink ? (
