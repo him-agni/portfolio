@@ -87,6 +87,14 @@ export const projectsData = [
     artifacts: artifactsFor('Release_Intelligence_Dashboard')
   },
   {
+    title: 'Security Posture Scorecard',
+    description: 'A full-stack security scanner that grades public GitHub repositories across frontend, backend, and database layers with transparent confidence levels for every finding.',
+    image: 'https://github.com/user-attachments/assets/aaba5cba-d839-45a3-aa1b-efc37e7c5d20',
+    tags: ['React', 'Node.js / Express', 'GitHub API', 'OSV', 'Vitest', 'Playwright'],
+    liveLink: 'https://client-lime-alpha.vercel.app/',
+    repoLink: 'https://github.com/him-agni/security-posture-scorecard'
+  },
+  {
     slug: 'lead-form-automation-hub',
     title: 'Lead & Form Automation Hub',
     category: 'Project',
