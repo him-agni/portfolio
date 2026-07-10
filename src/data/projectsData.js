@@ -1,5 +1,5 @@
 import saasIntegrationHubImage from '../assets/saas integration hub.png';
-import releaseIntelligenceImage from '../assets/release intelligence.png';
+import releaseIntelligenceImage from '../assets/release-intelligence.png';
 import leadFormAutomationImage from '../assets/lead & form automation.png';
 
 const artifactsFor = (fileBaseName) => [
@@ -87,12 +87,36 @@ export const projectsData = [
     artifacts: artifactsFor('Release_Intelligence_Dashboard')
   },
   {
+    slug: 'security-posture-scorecard',
     title: 'Security Posture Scorecard',
+    category: 'Project',
+    verified: true,
     description: 'A full-stack security scanner that grades public GitHub repositories across frontend, backend, and database layers with transparent confidence levels for every finding.',
+    longDescription: "A static repo analyzer that grades a GitHub project's security posture — with a confidence tier on every finding, so the score is trustworthy and doesn't hide a false green.",
     image: 'https://github.com/user-attachments/assets/aaba5cba-d839-45a3-aa1b-efc37e7c5d20',
-    tags: ['React', 'Node.js / Express', 'GitHub API', 'OSV', 'Vitest', 'Playwright'],
+    tags: ['React', 'Node.js / Express', 'Octokit', 'OSV Database', 'Plugin architecture', 'Vitest', 'Playwright'],
     liveLink: 'https://client-lime-alpha.vercel.app/',
-    repoLink: 'https://github.com/him-agni/security-posture-scorecard'
+    repoLink: 'https://github.com/him-agni/security-posture-scorecard',
+    problem: 'Static security scanners generate too much noise, and teams stop trusting the results. Worse, some scanners report false-green passes on unverifiable controls like encryption-at-rest — hiding real risk under a clean-looking scorecard. Developers dismiss findings, and important repos go unpatched because the report looked fine.',
+    solutionIntro: 'A confidence-tiered scorecard that labels every finding as "verified," "detected," or "manual" — so teams know exactly what was proven from source, what was heuristically inferred, and what still needs a human to confirm. The result is a scorecard developers actually trust and act on.',
+    solutionSteps: [
+      'Repo URL → Octokit fetches tarball',
+      'single in-memory file tree',
+      'registered checks (frontend · backend · database)',
+      'severity-weighted scorer (critical 40 · high 25 · medium 15 · low 10)',
+      'per-layer + overall grade',
+      'temp dir cleaned up (try / finally)'
+    ],
+    capabilities: [
+      'Three-tier confidence labels (verified / detected / manual) on every finding — no false greens',
+      'Plugin architecture — each check is a self-contained module, so new checks are additive',
+      'Transparent scoring with a "why this score" breakdown, not a black-box grade',
+      'OSV database lookup for known-vulnerable dependencies from the lockfile',
+      "Not-applicable detection, so a frontend library isn't penalized for missing backend controls",
+      'Manual checklist for unverifiable-from-source items (encryption at rest, backups)'
+    ],
+    businessOutcome: 'Security scores developers trust and act on, no false greens hiding real gaps, and faster remediation prioritization — because the confidence tier tells teams which findings need immediate action vs. human review.',
+    artifacts: artifactsFor('Security_Posture_Scorecard')
   },
   {
     slug: 'lead-form-automation-hub',
