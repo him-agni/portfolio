@@ -40,9 +40,15 @@ const ProjectDetail = () => {
         </div>
 
         <div className="detail-actions">
-          <span className="detail-btn detail-btn-disabled">
-            <Play size={16} /> Watch the demo
-          </span>
+          {project.demoVideo ? (
+            <a href="#project-demo" className="detail-btn detail-btn-demo">
+              <Play size={16} /> Watch the demo
+            </a>
+          ) : (
+            <span className="detail-btn detail-btn-disabled">
+              <Play size={16} /> Demo coming soon
+            </span>
+          )}
           <a href={project.repoLink} target="_blank" rel="noreferrer" className="detail-btn detail-btn-outline">
             <FaGithub size={16} /> View code on GitHub
           </a>
@@ -55,11 +61,18 @@ const ProjectDetail = () => {
 
         <hr className="detail-divider" />
 
-        <section className="detail-section">
+        <section id="project-demo" className="detail-section">
           <span className="section-label">// DEMO</span>
-          <div className="demo-placeholder">
-            [ 2-3 min walkthrough video coming soon ]
-          </div>
+          {project.demoVideo ? (
+            <video className="demo-video" controls preload="metadata">
+              <source src={project.demoVideo} type="video/mp4" />
+              Your browser does not support the video element.
+            </video>
+          ) : (
+            <div className="demo-placeholder">
+              [ 2-3 min walkthrough video coming soon ]
+            </div>
+          )}
         </section>
 
         <hr className="detail-divider" />
