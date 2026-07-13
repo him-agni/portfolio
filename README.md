@@ -4,7 +4,7 @@
 
 An entry-level Solutions Engineer portfolio featuring hands-on integrations, technical demos, architecture decisions, and clearly labeled simulated sales-cycle artifacts. I built these projects through self-directed learning to demonstrate how I approach realistic customer problems, API design, webhooks, security, observability, failure handling, and implementation trade-offs.
 
-I have not held a professional Solutions Engineer role yet. This portfolio presents evidence of my technical foundation, communication style, and readiness to learn in an entry-level role without implying professional customer or revenue experience.
+My experience comes from hands-on portfolio projects and self-directed learning. This portfolio presents evidence of my technical foundation, communication style, and readiness to learn in an entry-level role without implying customer or revenue outcomes.
 
 [View the live portfolio](https://him-agni.github.io/portfolio/)
 

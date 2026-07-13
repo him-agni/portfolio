@@ -13,7 +13,7 @@ const About = () => {
               I'm an entry-level Solutions Engineer candidate with a full-stack engineering foundation. I built this portfolio to demonstrate how I approach realistic customer problems, API integrations, technical demos, architecture decisions, and implementation trade-offs.
             </p>
             <p className="about-text">
-              I haven't held a professional Solutions Engineer role yet. My experience comes from hands-on portfolio projects and self-directed learning across APIs, webhooks, authentication, data flows, observability, and technical documentation. I'm ready to bring that foundation, curiosity, and communication-first mindset to an entry-level team.
+              My experience comes from hands-on portfolio projects and self-directed learning across APIs, webhooks, authentication, data flows, observability, and technical documentation. I'm ready to bring that foundation, curiosity, and communication-first mindset to an entry-level team.
             </p>
             <div className="status-badge">
               <span className="pulse-dot"></span>
