@@ -35,11 +35,11 @@ const Hero = () => {
             Hi, I'm <span>Himani Agrawal</span>
           </h1>
           <div className="role-capsules" aria-label="Professional roles">
-            <span>Solutions Engineer</span>
+            <span>Entry-Level Solutions Engineer</span>
             <span>Full Stack Developer</span>
           </div>
           <p className="hero-description">
-            I translate customer problems into secure, scalable integrations — and make solutions easy to evaluate through demos, architecture guidance, and clear technical documentation.
+            I build customer-focused technical projects that demonstrate API integrations, solution design, clear demos, and honest architecture trade-offs.
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary" onClick={scrollToProjects}>

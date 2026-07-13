@@ -65,7 +65,7 @@ const Projects = () => {
       <div className="container">
         <div className="section-header">
           <h2 className="heading-lg">Featured <span className="text-gradient">Projects</span></h2>
-          <p className="section-subtitle">Customer problems translated into integrations, technical demos, and implementation-ready solutions.</p>
+          <p className="section-subtitle">Portfolio projects translating realistic customer problems into integrations, technical demos, and implementation-ready designs.</p>
         </div>
 
         <div className="projects-grid">

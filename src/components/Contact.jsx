@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="contact-container glass-panel">
           <div className="section-header">
             <h2 className="heading-lg">Get In <span className="text-gradient">Touch</span></h2>
-            <p className="section-subtitle">Open to Solutions Engineer and Sales Engineer opportunities.</p>
+            <p className="section-subtitle">Open to entry-level Solutions Engineer and Sales Engineer opportunities.</p>
           </div>
           
           <div className="contact-links">
@@ -27,7 +27,7 @@ const Contact = () => {
                 <FaLinkedin size={28} />
               </div>
               <h3>LinkedIn</h3>
-              <p>Connect about Solutions Engineering opportunities.</p>
+              <p>Connect about entry-level Solutions Engineering opportunities.</p>
             </a>
             
             <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="contact-card glass group">

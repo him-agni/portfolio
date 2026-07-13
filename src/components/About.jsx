@@ -10,14 +10,14 @@ const About = () => {
           <div className="about-content">
             <h2 className="heading-lg">About <span className="text-gradient">Me</span></h2>
             <p className="about-text">
-              I'm a solutions-focused engineer who bridges customer problems and technical implementation. I design integrations, build working demos, and explain architecture clearly so technical and business stakeholders can evaluate a solution with confidence.
+              I'm an entry-level Solutions Engineer candidate with a full-stack engineering foundation. I built this portfolio to demonstrate how I approach realistic customer problems, API integrations, technical demos, architecture decisions, and implementation trade-offs.
             </p>
             <p className="about-text">
-              My strongest areas are APIs, webhooks, authentication, data flows, observability, and technical documentation. I enjoy turning ambiguous requirements into practical solution designs, while communicating trade-offs honestly and keeping the customer outcome in focus.
+              I haven't held a professional Solutions Engineer role yet. My experience comes from hands-on portfolio projects and self-directed learning across APIs, webhooks, authentication, data flows, observability, and technical documentation. I'm ready to bring that foundation, curiosity, and communication-first mindset to an entry-level team.
             </p>
             <div className="status-badge">
               <span className="pulse-dot"></span>
-              Open to Solutions Engineer and Sales Engineer opportunities — Austin or remote
+              Open to entry-level Solutions Engineer and Sales Engineer opportunities — Austin or remote
             </div>
           </div>
           

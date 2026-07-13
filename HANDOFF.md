@@ -7,10 +7,10 @@ Use this document as the current-state briefing for future work on the portfolio
 ## Current state
 
 - Branch: `main`, tracking `origin/main`
-- Starting baseline commit for the latest change set: `825d42f` (`Add engineering notes for featured projects`)
+- Starting baseline commit for the latest change set: `44d5609` (`Polish portfolio for solutions engineering roles`)
 - Production site: <https://him-agni.github.io/portfolio/>
 - Repository: <https://github.com/him-agni/portfolio>
-- Latest change set: aligned the hero, About, Projects, and Contact copy around Solutions Engineering; added a public email contact; moved the two general development projects into a compact “Other Builds” section; added SEO/social metadata, written demo transcripts, and a Solutions Engineer-focused README.
+- Latest change set: positioned the site explicitly and honestly for entry-level Solutions Engineer roles; clarified that the work is self-directed portfolio experience; renamed ambiguous “Verified” badges to “Built & Deployed”; and aligned metadata and README language with that positioning.
 - Verification on 2026-07-13:
   - `npm run lint` passes
   - `npm run build` passes with Vite 8.0.8

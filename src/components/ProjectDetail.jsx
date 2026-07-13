@@ -24,9 +24,9 @@ const ProjectDetail = () => {
 
         <div className="detail-meta-row">
           <span className="detail-category">{project.category}</span>
-          {project.verified && (
+          {project.builtAndDeployed && (
             <span className="detail-verified-badge">
-              <span className="verified-dot" /> Verified
+              <span className="verified-dot" /> Built &amp; Deployed
             </span>
           )}
         </div>

@@ -1,8 +1,10 @@
-# Himani Agrawal — Solutions Engineer Portfolio
+# Himani Agrawal — Entry-Level Solutions Engineer Portfolio
 
 ![Portfolio preview](https://github.com/user-attachments/assets/789c3b75-9a46-4acd-b66b-38db771bee5d)
 
-A customer-focused Solutions Engineer portfolio featuring working integrations, technical demos, architecture decisions, and sales-cycle artifacts. The projects emphasize API design, webhooks, security, observability, failure handling, and the translation of business problems into implementation-ready solutions.
+An entry-level Solutions Engineer portfolio featuring hands-on integrations, technical demos, architecture decisions, and clearly labeled simulated sales-cycle artifacts. I built these projects through self-directed learning to demonstrate how I approach realistic customer problems, API design, webhooks, security, observability, failure handling, and implementation trade-offs.
+
+I have not held a professional Solutions Engineer role yet. This portfolio presents evidence of my technical foundation, communication style, and readiness to learn in an entry-level role without implying professional customer or revenue experience.
 
 [View the live portfolio](https://him-agni.github.io/portfolio/)
 
@@ -30,7 +32,7 @@ Each detailed project includes:
 - Structured engineering notes and architecture diagrams
 - Explicit design decisions, alternatives, and trade-offs
 - Security, scalability, limitations, and production-evolution sections
-- Solutions Engineering practice artifacts: an RFP response, solution brief, and MEDDIC breakdown
+- Clearly labeled Solutions Engineering practice artifacts: a mock RFP response, solution brief, and MEDDIC breakdown
 - A narrated demo and written transcript where available
 
 ## Technology
