@@ -23,7 +23,7 @@ const Projects = () => {
                   {project.slug ? (
                     <>
                       <Link to={`/projects/${project.slug}`} className="overlay-btn">
-                        <ExternalLink size={20} /> View Case Study
+                        <ExternalLink size={20} /> View Engineering Notes
                       </Link>
                       {project.liveLink && (
                         <a href={project.liveLink} target="_blank" rel="noreferrer" className="overlay-btn">

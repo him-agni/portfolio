@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import { ExternalLink, Play } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import { projectsData } from '../data/projectsData';
+import EngineeringNotes from './EngineeringNotes';
 import './ProjectDetail.css';
 
 const ProjectDetail = () => {
@@ -77,51 +78,57 @@ const ProjectDetail = () => {
 
         <hr className="detail-divider" />
 
-        <section className="detail-section">
-          <span className="section-label">// THE PROBLEM</span>
-          <p className="detail-text">{project.problem}</p>
-        </section>
+        {project.engineeringNotes ? (
+          <EngineeringNotes notes={project.engineeringNotes} />
+        ) : (
+          <>
+            <section className="detail-section">
+              <span className="section-label">// THE PROBLEM</span>
+              <p className="detail-text">{project.problem}</p>
+            </section>
 
-        <hr className="detail-divider" />
+            <hr className="detail-divider" />
 
-        <section className="detail-section">
-          <span className="section-label">// THE SOLUTION</span>
-          <p className="detail-text">{project.solutionIntro}</p>
-          {hasSolutionSteps && (
-            <div className="solution-flow-box">
-              {project.solutionSteps.map((step, i) => (
-                <div key={i} className={`flow-line ${i === 0 ? 'flow-line-root' : ''}`}>
-                  {i > 0 && <span className="flow-arrow">→</span>}
-                  {step}
+            <section className="detail-section">
+              <span className="section-label">// THE SOLUTION</span>
+              <p className="detail-text">{project.solutionIntro}</p>
+              {hasSolutionSteps && (
+                <div className="solution-flow-box">
+                  {project.solutionSteps.map((step, i) => (
+                    <div key={i} className={`flow-line ${i === 0 ? 'flow-line-root' : ''}`}>
+                      {i > 0 && <span className="flow-arrow">→</span>}
+                      {step}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          )}
-        </section>
+              )}
+            </section>
 
-        <hr className="detail-divider" />
+            <hr className="detail-divider" />
 
-        <section className="detail-section">
-          <span className="section-label">// KEY CAPABILITIES</span>
-          {hasCapabilities ? (
-            <ul className="capabilities-list">
-              {project.capabilities.map((cap, i) => (
-                <li key={i}><span className="capability-arrow">▸</span> {cap}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="detail-text">Content coming soon.</p>
-          )}
-        </section>
+            <section className="detail-section">
+              <span className="section-label">// KEY CAPABILITIES</span>
+              {hasCapabilities ? (
+                <ul className="capabilities-list">
+                  {project.capabilities.map((cap, i) => (
+                    <li key={i}><span className="capability-arrow">▸</span> {cap}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="detail-text">Content coming soon.</p>
+              )}
+            </section>
 
-        <hr className="detail-divider" />
+            <hr className="detail-divider" />
 
-        <section className="detail-section">
-          <span className="section-label">// BUSINESS OUTCOME</span>
-          <div className="business-outcome-box">
-            {project.businessOutcome}
-          </div>
-        </section>
+            <section className="detail-section">
+              <span className="section-label">// BUSINESS OUTCOME</span>
+              <div className="business-outcome-box">
+                {project.businessOutcome}
+              </div>
+            </section>
+          </>
+        )}
 
         <hr className="detail-divider" />
 

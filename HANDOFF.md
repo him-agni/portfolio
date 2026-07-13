@@ -10,7 +10,7 @@ Use this document as the current-state briefing for future work on the portfolio
 - Starting baseline commit for the latest change set: `2c89e78` (`Add project demo videos`)
 - Production site: <https://him-agni.github.io/portfolio/>
 - Repository: <https://github.com/him-agni/portfolio>
-- Latest change set: added this handoff document; fixed the hero “View Projects” button so it scrolls to the projects section without conflicting with `HashRouter`; updated the hero labels and roles; expanded the skill ribbon and converted it to an accessible, continuously moving marquee.
+- Latest change set: added this handoff document; updated the hero interactions, labels, roles, and skill marquee; renamed the four detailed project-card links to “View Engineering Notes”; replaced all four legacy project summaries with ten-section engineering notes rendered through a shared component.
 - Verification on 2026-07-13:
   - `npm run lint` passes
   - `npm run build` passes with Vite 8.0.8
@@ -29,6 +29,7 @@ The application uses React 19, React Router 7, Vite 8, vanilla CSS, Lucide, and 
 - `src/data/projectsData.js` is the source of truth for all project content, external links, media paths, case-study sections, and artifact metadata.
 - `src/components/Projects.jsx` renders the project grid. Entries with a `slug` link to an internal case study; entries without one link directly to their demo/source.
 - `src/components/ProjectDetail.jsx` renders the shared case-study template. Unknown slugs redirect home.
+- `src/components/EngineeringNotes.jsx` renders structured engineering-note sections, subsections, and architecture diagrams when a project supplies `engineeringNotes`.
 - `src/components/*.css`, `src/App.css`, and `src/index.css` contain all styling; there is no CSS framework.
 - `src/assets/` contains images imported into the bundle.
 - `public/` contains files that must preserve stable public names: the resume, PDFs, videos, icons, and two project thumbnails.
@@ -36,7 +37,7 @@ The application uses React 19, React Router 7, Vite 8, vanilla CSS, Lucide, and 
 
 ## Content model
 
-There are six project cards. Four have full case-study routes:
+There are six project cards. Four have full engineering-notes routes:
 
 1. SaaS Integration Hub — demo video and three PDFs available.
 2. Release Intelligence Dashboard — demo video and three PDFs available.
@@ -45,7 +46,7 @@ There are six project cards. Four have full case-study routes:
 
 GitHub Stats Tracker and Personal Finance Tracker use the simpler external-link card behavior.
 
-To add a full case study, add a unique `slug` and the fields consumed by `ProjectDetail.jsx`: `category`, `verified`, `longDescription`, `demoVideo` if available, `problem`, `solutionIntro`, `solutionSteps`, `capabilities`, `businessOutcome`, and `artifacts`. Put public documents/media in `public/` and build their URLs with `import.meta.env.BASE_URL`.
+To add a detailed project, add a unique `slug` and the shared fields consumed by `ProjectDetail.jsx`. All four current detailed projects provide an `engineeringNotes` array and use the structured notes renderer. The older `problem`, `solutionIntro`, `solutionSteps`, `capabilities`, and `businessOutcome` fields remain as a fallback for any future project without notes. Put public documents/media in `public/` and build their URLs with `import.meta.env.BASE_URL`.
 
 ## Local workflow
 

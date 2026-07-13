@@ -1,6 +1,10 @@
 import saasIntegrationHubImage from '../assets/saas integration hub.png';
 import releaseIntelligenceImage from '../assets/release-intelligence.png';
 import leadFormAutomationImage from '../assets/lead & form automation.png';
+import { saasIntegrationHubNotes } from './saasIntegrationHubNotes';
+import { releaseIntelligenceDashboardNotes } from './releaseIntelligenceDashboardNotes';
+import { securityPostureScorecardNotes } from './securityPostureScorecardNotes';
+import { leadFormAutomationHubNotes } from './leadFormAutomationHubNotes';
 
 const artifactsFor = (fileBaseName) => [
   {
@@ -33,6 +37,7 @@ export const projectsData = [
     demoVideo: `${import.meta.env.BASE_URL}saas-integration-hub.mp4`,
     liveLink: 'https://multi-api-integration-hub-frontend.vercel.app/dashboard',
     repoLink: 'https://github.com/him-agni/MutliAPI_integration_hub',
+    engineeringNotes: saasIntegrationHubNotes,
     problem: 'Commerce teams have payment, inventory, and delivery events scattered across Stripe, Shopify, and internal tools, with no single reliable pipeline turning those events into the right downstream action — alerting ops, notifying customers, or updating a CRM record.',
     solutionIntro: 'One verified, idempotent event pipeline that normalizes events from multiple sources and reliably fans them out to Slack, email, and CRM, backed by a live dashboard for visibility and a simulator for safe testing.',
     solutionSteps: [
@@ -66,6 +71,7 @@ export const projectsData = [
     demoVideo: `${import.meta.env.BASE_URL}release%20intelligence%20.mp4`,
     liveLink: 'https://release-intelligence-dashboard.vercel.app/',
     repoLink: 'https://github.com/him-agni/release-intelligence-dashboard',
+    engineeringNotes: releaseIntelligenceDashboardNotes,
     problem: 'After every deployment, engineering teams check GitHub Actions, Sentry, product analytics, and cloud logs in separate tabs to figure out whether the release is actually safe — a slow, manual, and easy-to-skip process.',
     solutionIntro: 'A dashboard that pulls all four signals in parallel right after a deploy and condenses them into one health score and recommendation, so the team gets a single, decision-ready answer instead of four browser tabs.',
     solutionSteps: [
@@ -99,6 +105,7 @@ export const projectsData = [
     tags: ['React', 'Node.js / Express', 'Octokit', 'OSV Database', 'Plugin architecture', 'Vitest', 'Playwright'],
     liveLink: 'https://client-lime-alpha.vercel.app/',
     repoLink: 'https://github.com/him-agni/security-posture-scorecard',
+    engineeringNotes: securityPostureScorecardNotes,
     problem: 'Static security scanners generate too much noise, and teams stop trusting the results. Worse, some scanners report false-green passes on unverifiable controls like encryption-at-rest — hiding real risk under a clean-looking scorecard. Developers dismiss findings, and important repos go unpatched because the report looked fine.',
     solutionIntro: 'A confidence-tiered scorecard that labels every finding as "verified," "detected," or "manual" — so teams know exactly what was proven from source, what was heuristically inferred, and what still needs a human to confirm. The result is a scorecard developers actually trust and act on.',
     solutionSteps: [
@@ -131,6 +138,7 @@ export const projectsData = [
     tags: ['React', 'Node.js / Express', 'MongoDB', 'Tally', 'Airtable', 'Discord', 'Google Sheets'],
     liveLink: 'https://client-lime-alpha.vercel.app',
     repoLink: 'https://github.com/him-agni/lead-form-automation-hub',
+    engineeringNotes: leadFormAutomationHubNotes,
     problem: 'Marketing and RevOps teams capture leads through forms but rely on brittle chains — often Zapier or manual copy-paste — to move each lead into their CRM, team chat, and spreadsheet log. When one link in the chain silently fails, hot leads get lost and no one notices until a customer complains.',
     solutionIntro: 'A signed-webhook lead pipeline that verifies Tally submissions, then fans them out in parallel to Airtable, Discord, and Google Sheets — with per-destination retry so one vendor outage never takes the whole flow down, and a live dashboard so every submission is traceable.',
     solutionSteps: [
