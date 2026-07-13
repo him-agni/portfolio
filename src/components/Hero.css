@@ -257,14 +257,32 @@
   left: 0;
   right: 0;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  gap: clamp(1rem, 4vw, 3rem);
-  padding: 1.1rem 2rem;
+  padding: 1.1rem 0;
   background: var(--accent-primary);
   color: #07100a;
   font-weight: 900;
   overflow: hidden;
+}
+
+.skill-track,
+.skill-set {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.skill-track {
+  animation: skillMarquee 34s linear infinite;
+  will-change: transform;
+}
+
+.skill-set {
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  padding-right: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.skill-ribbon:hover .skill-track {
+  animation-play-state: paused;
 }
 
 .skill-ribbon span {
@@ -379,6 +397,12 @@
   }
 }
 
+@keyframes skillMarquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (max-width: 900px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -447,7 +471,21 @@
   }
 
   .skill-ribbon {
-    justify-content: flex-start;
+    overflow: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-ribbon {
     overflow-x: auto;
+  }
+
+  .skill-track {
+    animation: none;
+    will-change: auto;
+  }
+
+  .skill-set[aria-hidden="true"] {
+    display: none;
   }
 }
