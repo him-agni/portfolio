@@ -1,70 +1,74 @@
-# Himani Agrawal - Developer Portfolio
+# Himani Agrawal — Solutions Engineer Portfolio
 
-<img width="1558" height="911" alt="image" src="https://github.com/user-attachments/assets/789c3b75-9a46-4acd-b66b-38db771bee5d" />
+![Portfolio preview](https://github.com/user-attachments/assets/789c3b75-9a46-4acd-b66b-38db771bee5d)
 
+A customer-focused Solutions Engineer portfolio featuring working integrations, technical demos, architecture decisions, and sales-cycle artifacts. The projects emphasize API design, webhooks, security, observability, failure handling, and the translation of business problems into implementation-ready solutions.
 
+[View the live portfolio](https://him-agni.github.io/portfolio/)
 
-A modern, responsive, and beautifully crafted developer portfolio built to showcase my full-stack and frontend engineering projects. The design features a premium "glassmorphic" aesthetic with a deep dark-mode color palette and dynamic micro-animations.
+## Featured projects
 
-[**View Live Site**](https://him-agni.github.io/portfolio/)
+### SaaS Integration Hub
 
----
+A verified, idempotent commerce-event pipeline that normalizes Stripe and Shopify webhooks, persists them in MongoDB, and independently fans out actions to Slack, email, and HubSpot.
 
-## ✨ Features
+### Release Intelligence Dashboard
 
-- **Glassmorphism UI**: Stunning translucent backgrounds with blurred overlays (`backdrop-filter`) creates a rich depth-of-field effect.
-- **Dynamic Projects Showcase**: High-quality UI mockups with interactive 3D-hover states linking to live demos and source code.
-- **Responsive Design**: Flawlessly adapts to all screen sizes from mobile to desktop.
-- **Seamless Navigation**: Sticky navbar with smooth scroll integration to page sections.
-- **Optimized for Speed**: Built on Vite for lightning-fast HMR and highly optimized production builds.
+A deploy-time decision system that combines GitHub Actions, Sentry, PostHog, and GCP Logging signals into a deterministic health score, recommendation, and durable release snapshot.
 
-## 🛠️ Tech Stack
+### Security Posture Scorecard
 
-- **Framework:** React 18
-- **Build Tool:** Vite
-- **Styling:** Vanilla CSS (Custom Properties, Flexbox, CSS Grid)
-- **Icons:** `lucide-react` & `react-icons`
-- **Deployment:** GitHub Pages
+A static repository scanner with confidence-aware findings, transparent scoring, OSV dependency checks, and defensive handling of untrusted repository archives.
 
-## 🚀 Local Development
+### Lead & Form Automation Hub
 
-To run this project locally, follow these steps:
+An acknowledge-then-deliver lead pipeline that accepts signed Tally webhooks, persists submissions immediately, and delivers independently to Airtable, Discord, and Google Sheets with retry and partial-failure tracking.
 
-**1. Clone the repository**
-```bash
-git clone https://github.com/him-agni/portfolio.git
-cd portfolio
-```
+Each detailed project includes:
 
-**2. Install dependencies**
+- A live application and source repository
+- Structured engineering notes and architecture diagrams
+- Explicit design decisions, alternatives, and trade-offs
+- Security, scalability, limitations, and production-evolution sections
+- Solutions Engineering practice artifacts: an RFP response, solution brief, and MEDDIC breakdown
+- A narrated demo and written transcript where available
+
+## Technology
+
+- React 19 and React Router 7
+- Vite 8
+- Vanilla CSS
+- Lucide and React Icons
+- GitHub Pages deployment
+
+The portfolio projects cover additional technologies including Node.js, Express, MongoDB, REST APIs, webhooks, HMAC verification, third-party SaaS integrations, observability platforms, AWS, Docker, and GitHub Actions.
+
+## Local development
+
 ```bash
 npm install
-```
-
-**3. Start the development server**
-```bash
 npm run dev
 ```
 
-**4. Open your browser**
-Navigate to `http://localhost:5173/`
+Open `http://localhost:5173/portfolio/`.
 
-## 📦 Deployment
+## Verification
 
-This project configured to deploy automatically to GitHub pages. To deploy a new update:
+```bash
+npm run lint
+npm run build
+```
 
-1. Commit your changes to the `main` branch.
-2. Run the deployment script:
-   ```bash
-   npm run deploy
-   ```
-This will automatically build the `dist` directory and push it to the `gh-pages` branch.
+## Deployment
 
-## 🤝 Connect with Me
+```bash
+npm run deploy
+```
 
-- **LinkedIn:** [linkedin.com/in/himani--agrawal](https://www.linkedin.com/in/himani--agrawal/)
-- **GitHub:** [github.com/him-agni](https://github.com/him-agni)
+The `predeploy` hook creates the production build, and `gh-pages` publishes `dist/` to the repository's `gh-pages` branch.
 
----
+## Contact
 
-*Designed & developed by [Himani Agrawal](https://github.com/him-agni).*
+- Email: [himani.agrawal.us@gmail.com](mailto:himani.agrawal.us@gmail.com)
+- LinkedIn: [linkedin.com/in/himani--agrawal](https://www.linkedin.com/in/himani--agrawal/)
+- GitHub: [github.com/him-agni](https://github.com/him-agni)

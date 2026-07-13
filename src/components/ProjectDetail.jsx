@@ -74,6 +74,19 @@ const ProjectDetail = () => {
               [ 2-3 min walkthrough video coming soon ]
             </div>
           )}
+          {project.demoTranscript && (
+            <details className="demo-transcript">
+              <summary>Read the written demo transcript</summary>
+              <div className="demo-transcript-content">
+                <p className="demo-transcript-note">
+                  This written walkthrough summarizes the demo's workflow and key technical points.
+                </p>
+                {project.demoTranscript.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
+            </details>
+          )}
         </section>
 
         <hr className="detail-divider" />

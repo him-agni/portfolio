@@ -10,14 +10,14 @@ const About = () => {
           <div className="about-content">
             <h2 className="heading-lg">About <span className="text-gradient">Me</span></h2>
             <p className="about-text">
-              I build web applications that are fast, functional, and built to scale. Self-taught and relentless. I figure things out, push through errors, and never stop building — because the learning never stops either.
+              I'm a solutions-focused engineer who bridges customer problems and technical implementation. I design integrations, build working demos, and explain architecture clearly so technical and business stakeholders can evaluate a solution with confidence.
             </p>
             <p className="about-text">
-              Currently leveling up with Next.js, TypeScript, and AI integration — building projects that don't just work, but think. I'm comfortable working with AI workflows — from integrating LLM APIs into apps to building AI-powered features that solve real problems.
+              My strongest areas are APIs, webhooks, authentication, data flows, observability, and technical documentation. I enjoy turning ambiguous requirements into practical solution designs, while communicating trade-offs honestly and keeping the customer outcome in focus.
             </p>
             <div className="status-badge">
               <span className="pulse-dot"></span>
-              Open to work — Junior Developer / Frontend / Full-Stack roles
+              Open to Solutions Engineer and Sales Engineer opportunities — Austin or remote
             </div>
           </div>
           

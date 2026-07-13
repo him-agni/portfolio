@@ -39,7 +39,7 @@ const Hero = () => {
             <span>Full Stack Developer</span>
           </div>
           <p className="hero-description">
-            I turn ideas into apps, create solutions for businesses that work and scale.
+            I translate customer problems into secure, scalable integrations — and make solutions easy to evaluate through demos, architecture guidance, and clear technical documentation.
           </p>
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary" onClick={scrollToProjects}>

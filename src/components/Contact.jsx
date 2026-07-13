@@ -1,6 +1,6 @@
 import React from 'react';
-import { MapPin } from 'lucide-react';
-import { FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { Mail, MapPin } from 'lucide-react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -10,16 +10,24 @@ const Contact = () => {
         <div className="contact-container glass-panel">
           <div className="section-header">
             <h2 className="heading-lg">Get In <span className="text-gradient">Touch</span></h2>
-            <p className="section-subtitle">Let's build something amazing together.</p>
+            <p className="section-subtitle">Open to Solutions Engineer and Sales Engineer opportunities.</p>
           </div>
           
           <div className="contact-links">
+            <a href="mailto:himani.agrawal.us@gmail.com" className="contact-card glass group">
+              <div className="icon-wrapper">
+                <Mail size={28} />
+              </div>
+              <h3>Email</h3>
+              <p className="contact-email">himani.agrawal.us@gmail.com</p>
+            </a>
+
             <a href="https://www.linkedin.com/in/himani--agrawal/" target="_blank" rel="noreferrer" className="contact-card glass group">
               <div className="icon-wrapper">
                 <FaLinkedin size={28} />
               </div>
               <h3>LinkedIn</h3>
-              <p>Connect and be part of my journey.</p>
+              <p>Connect about Solutions Engineering opportunities.</p>
             </a>
             
             <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="contact-card glass group">
@@ -27,17 +35,9 @@ const Contact = () => {
                 <FaGithub size={28} />
               </div>
               <h3>GitHub</h3>
-              <p>Explore my code and growth.</p>
+              <p>Review the code behind my technical projects.</p>
             </a>
 
-            <a href="https://www.instagram.com/webdevlearns" target="_blank" rel="noreferrer" className="contact-card glass group">
-              <div className="icon-wrapper">
-                <FaInstagram size={28} />
-              </div>
-              <h3>Instagram</h3>
-              <p>Educational web dev content.</p>
-            </a>
-            
             <div className="contact-card glass">
               <div className="icon-wrapper">
                 <MapPin size={28} />

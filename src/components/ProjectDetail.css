@@ -164,6 +164,37 @@
   background: #000;
 }
 
+.demo-transcript {
+  margin-top: 1.25rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.demo-transcript summary {
+  padding: 1rem 1.25rem;
+  color: var(--accent-primary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.demo-transcript-content {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.demo-transcript-content p {
+  max-width: 740px;
+  margin-top: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+.demo-transcript-content .demo-transcript-note {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .detail-text {
   color: var(--text-secondary);
   font-size: 1.05rem;
