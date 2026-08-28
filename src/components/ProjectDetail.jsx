@@ -146,9 +146,9 @@ const ProjectDetail = () => {
         <hr className="detail-divider" />
 
         <section className="detail-section">
-          <span className="section-label">// SOLUTIONS ENGINEERING ARTIFACTS</span>
+          <span className="section-label">// TECHNICAL DISCOVERY ARTIFACTS</span>
           <p className="detail-text-muted">
-            Practice exercises in the artifacts an SE produces during a technical sales cycle — written from this project's actual architecture.
+            Practice exercises in technical discovery artifacts used during an evaluation cycle — written from this project's actual architecture.
           </p>
           <div className="artifacts-grid">
             {project.artifacts.map((artifact, i) => (

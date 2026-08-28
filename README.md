@@ -1,10 +1,10 @@
-# Himani Agrawal — Entry-Level Solutions Engineer Portfolio
+# Himani Agrawal — AI-Ready Full-Stack Developer Portfolio
 
 ![Portfolio preview](https://github.com/user-attachments/assets/789c3b75-9a46-4acd-b66b-38db771bee5d)
 
-An entry-level Solutions Engineer portfolio featuring hands-on integrations, technical demos, architecture decisions, and clearly labeled simulated sales-cycle artifacts. I built these projects through self-directed learning to demonstrate how I approach realistic customer problems, API design, webhooks, security, observability, failure handling, and implementation trade-offs.
+An AI-ready full-stack developer portfolio featuring hands-on integrations, technical demos, architecture decisions, and production-minded projects. I built these projects through self-directed learning to demonstrate how I approach realistic problems, API design, webhooks, security, observability, failure handling, and implementation trade-offs.
 
-My experience comes from hands-on portfolio projects and self-directed learning. This portfolio presents evidence of my technical foundation, communication style, and readiness to learn in an entry-level role without implying customer or revenue outcomes.
+My experience comes from hands-on portfolio projects and self-directed learning. This portfolio presents evidence of my technical foundation, communication style, and readiness to contribute as a full-stack developer without implying customer or revenue outcomes.
 
 [View the live portfolio](https://him-agni.github.io/portfolio/)
 
@@ -32,7 +32,7 @@ Each detailed project includes:
 - Structured engineering notes and architecture diagrams
 - Explicit design decisions, alternatives, and trade-offs
 - Security, scalability, limitations, and production-evolution sections
-- Clearly labeled Solutions Engineering practice artifacts: a mock RFP response, solution brief, and MEDDIC breakdown
+- Clearly labeled technical discovery artifacts: a mock RFP response, solution brief, and MEDDIC breakdown
 - A narrated demo and written transcript where available
 
 ## Technology
@@ -71,6 +71,6 @@ The `predeploy` hook creates the production build, and `gh-pages` publishes `dis
 
 ## Contact
 
-- Email: [himani.agrawal.us@gmail.com](mailto:himani.agrawal.us@gmail.com)
+- Email: [himaniagrawal.jsx@gmail.com](mailto:himaniagrawal.jsx@gmail.com)
 - LinkedIn: [linkedin.com/in/himani--agrawal](https://www.linkedin.com/in/himani--agrawal/)
 - GitHub: [github.com/him-agni](https://github.com/him-agni)

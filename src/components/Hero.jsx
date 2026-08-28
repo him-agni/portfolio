@@ -35,8 +35,7 @@ const Hero = () => {
             Hi, I'm <span>Himani Agrawal</span>
           </h1>
           <div className="role-capsules" aria-label="Professional roles">
-            <span>Entry-Level Solutions Engineer</span>
-            <span>Full Stack Developer</span>
+            <span>AI-Ready Full-Stack Developer</span>
           </div>
           <p className="hero-description">
             I build customer-focused technical projects that demonstrate API integrations, solution design, clear demos, and honest architecture trade-offs.

@@ -10,14 +10,14 @@ const About = () => {
           <div className="about-content">
             <h2 className="heading-lg">About <span className="text-gradient">Me</span></h2>
             <p className="about-text">
-              I'm an entry-level Solutions Engineer candidate with a full-stack engineering foundation. I built this portfolio to demonstrate how I approach realistic customer problems, API integrations, technical demos, architecture decisions, and implementation trade-offs.
+              I'm an AI-ready full-stack developer with a foundation in building practical, customer-focused applications. I built this portfolio to demonstrate how I approach realistic problems, API integrations, technical demos, architecture decisions, and implementation trade-offs.
             </p>
             <p className="about-text">
-              My experience comes from hands-on portfolio projects and self-directed learning across APIs, webhooks, authentication, data flows, observability, and technical documentation. I'm ready to bring that foundation, curiosity, and communication-first mindset to an entry-level team.
+              My experience comes from hands-on portfolio projects and self-directed learning across APIs, webhooks, authentication, data flows, observability, and technical documentation. I'm ready to bring that foundation, curiosity, and communication-first mindset to a collaborative development team.
             </p>
             <div className="status-badge">
               <span className="pulse-dot"></span>
-              Open to entry-level Solutions Engineer and Sales Engineer opportunities — Austin or remote
+              Open to AI-ready full-stack developer roles — Austin or remote
             </div>
           </div>
           
