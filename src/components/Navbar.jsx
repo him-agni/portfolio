@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { SiSubstack } from 'react-icons/si';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,11 +36,17 @@ const Navbar = () => {
           <a href="#projects" className="nav-link" onClick={scrollToSection('projects')}>Projects</a>
           <a href="#contact" className="nav-link" onClick={scrollToSection('contact')}>Contact</a>
           <div className="social-links-nav">
-            <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="social-icon">
+            <a href="https://github.com/him-agni" target="_blank" rel="noreferrer" className="social-icon" aria-label="GitHub">
               <FaGithub size={20} />
             </a>
-            <a href="https://www.linkedin.com/in/himani--agrawal/" target="_blank" rel="noreferrer" className="social-icon">
+            <a href="https://www.linkedin.com/in/himani--agrawal/" target="_blank" rel="noreferrer" className="social-icon" aria-label="LinkedIn">
               <FaLinkedin size={20} />
+            </a>
+            <a href="https://www.instagram.com/neophyte.js/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noreferrer" className="social-icon" aria-label="Instagram — @neophyte.js">
+              <FaInstagram size={20} />
+            </a>
+            <a href="https://substack.com/@himaniagrawal2" target="_blank" rel="noreferrer" className="social-icon" aria-label="Substack — @himaniagrawal2">
+              <SiSubstack size={20} />
             </a>
           </div>
         </div>

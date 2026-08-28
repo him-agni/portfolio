@@ -89,7 +89,7 @@ const Hero = () => {
               className="hero-photo"
             />
           </div>
-          <span className="floating-label label-code">React UI</span>
+          <span className="floating-label label-code">Product thinking</span>
           <span className="floating-label label-product">
             Solution oriented
           </span>
